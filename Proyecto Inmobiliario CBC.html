@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propiedades - Coldwell Banker Commercial</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; min-height: 100vh; }
+    nav {
+      width: 220px;
+      background-color: #003B71;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+    }
+    nav img {
+      width: 150px;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #00529b;
+    }
+    main {
+      flex-grow: 1;
+      padding: 2rem;
+      background-color: #f4f4f4;
+    }
+    h1 { color: #003B71; }
+    .filtros input, .filtros select {
+      padding: 0.5rem;
+      margin: 0.5rem 1rem 1rem 0;
+    }
+    .propiedad {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .propiedad img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      padding: 1rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coldwell_Banker_logo.svg/2560px-Coldwell_Banker_logo.svg.png" alt="Logo Coldwell Banker Commercial">
+    <a href="index.html">Inicio</a>
+    <a href="propiedades.html">Propiedades</a>
+    <a href="recomendador.html">Recomendador</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+  <main>
+    <h1>Catálogo de Propiedades</h1>
+
+    <div class="filtros">
+      <input type="text" placeholder="Zona (Ej. Polanco)">
+      <select>
+        <option>Tipo</option>
+        <option>Oficina</option>
+        <option>Nave Industrial</option>
+        <option>Centro Comercial</option>
+      </select>
+      <input type="number" placeholder="Superficie mínima (m²)">
+      <input type="number" placeholder="Precio máximo ($)">
+    </div>
+
+    <div class="propiedad">
+      <h2>Oficina en Reforma</h2>
+      <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a" alt="Oficina">
+      <p><strong>Zona:</strong> Centro</p>
+      <p><strong>Superficie:</strong> 250 m²</p>
+      <p><strong>Precio:</strong> $50,000/mes</p>
+      <p>Espacio moderno con recepción, salas de juntas y estacionamiento.</p>
+    </div>
+
+    <div class="propiedad">
+      <h2>Nave Industrial en Tlalnepantla</h2>
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Nave industrial">
+      <p><strong>Zona:</strong> Industrial</p>
+      <p><strong>Superficie:</strong> 800 m²</p>
+      <p><strong>Precio:</strong> $70,000/mes</p>
+      <p>Altura libre 9m, patio de maniobras, cerca de vías principales.</p>
+    </div>
+
+    <div class="propiedad">
+      <h2>Local en Centro Comercial</h2>
+      <img src="https://images.unsplash.com/photo-1616627987235-f0435c3fabc1" alt="Centro comercial">
+      <p><strong>Zona:</strong> Sur</p>
+      <p><strong>Superficie:</strong> 120 m²</p>
+      <p><strong>Precio:</strong> $35,000/mes</p>
+      <p>Ubicado en plaza con alto tráfico, ideal para tiendas o servicios.</p>
+    </div>
+
+    <footer>
+      &copy; 2025 Coldwell Banker Commercial | Todos los derechos reservados
+    </footer>
+  </main>
+</body>
+</html>
